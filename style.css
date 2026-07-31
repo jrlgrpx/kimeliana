@@ -1,0 +1,1179 @@
+/* ===============================
+   RESET
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+:root{
+
+    --bg:#f8f6f2;
+
+    --white:#ffffff;
+
+    --gold:#b8945c;
+
+    --text:#555;
+
+    --heading:#342b23;
+
+    --shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('assets/Devil-Breeze-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.jrl-logo{
+  font-family: 'MyCustomFont';
+}
+
+.container{
+
+    width:min(92%,1200px);
+
+    margin:auto;
+
+}
+
+.narrow{
+
+    max-width:760px;
+
+}
+
+/* ===============================
+   NAVIGATION
+================================ */
+
+nav{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:999;
+
+    backdrop-filter:blur(12px);
+
+    background:rgba(255,255,255,.15);
+
+    border-bottom:1px solid rgba(255,255,255,.2);
+
+}
+
+.nav-container{
+
+    height:75px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#f2d5a2;
+
+}
+
+/* ===============================
+   HERO
+================================ */
+
+.hero{
+
+    position:relative;
+
+    height:100vh;
+
+}
+
+.hero img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(0,0,0,.25),
+        rgba(0,0,0,.45)
+    );
+
+}
+
+.hero-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.eyebrow{
+
+    letter-spacing:5px;
+
+    font-size:12px;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:90px;
+
+    font-weight:600;
+
+}
+
+.hero-of{
+
+    margin:15px 0;
+
+    font-style:italic;
+
+    font-size:24px;
+
+}
+
+.hero h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:55px;
+
+    font-weight:500;
+
+}
+
+.hero-divider{
+
+    width:90px;
+
+    height:2px;
+
+    background:white;
+
+    margin:35px 0;
+
+}
+
+.hero-date{
+
+    font-size:18px;
+
+}
+
+.btn{
+
+    margin-top:35px;
+
+    padding:16px 40px;
+
+    border:1px solid white;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:white;
+
+    color:#333;
+
+}
+
+/* ===============================
+   SCROLL
+================================ */
+
+.scroll-down{
+
+    position:absolute;
+
+    bottom:35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:14px;
+
+}
+
+.scroll-down span{
+
+    display:block;
+
+    width:2px;
+
+    height:40px;
+
+    margin:auto;
+
+    margin-bottom:12px;
+
+    background:white;
+
+}
+
+/* ===============================
+   STORY
+================================ */
+
+.story{
+
+    padding:120px 0;
+
+    text-align:center;
+
+}
+
+.section-title{
+
+    color:var(--gold);
+
+    letter-spacing:4px;
+
+    font-size:12px;
+
+}
+
+.story h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:52px;
+
+    color:var(--heading);
+
+    margin:20px 0;
+
+}
+
+.story p{
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+/* =================================
+        BABY SECTION
+================================= */
+
+.baby{
+
+    padding:120px 0;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+.portrait-wrapper{
+
+    width:360px;
+
+    height:360px;
+
+    margin:60px auto;
+
+    padding:12px;
+
+    border-radius:50%;
+
+    background:#f4f1eb;
+
+    box-shadow:var(--shadow);
+
+}
+
+.portrait-wrapper img{
+
+    width:100%;
+
+    height:100%;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.baby h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:42px;
+
+    color:var(--heading);
+
+    margin-bottom:20px;
+
+}
+
+.baby-caption{
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:2;
+
+}
+
+/* ================================
+        DIVIDER
+================================ */
+
+.divider-section{
+
+    padding:40px 0;
+
+    text-align:center;
+
+}
+
+.divider-floral{
+
+    font-size:34px;
+
+    color:var(--gold);
+
+}
+
+/* ================================
+        DETAILS
+================================ */
+
+.details{
+
+    background:#f7f4ee;
+
+    padding:120px 0;
+
+}
+
+.timeline{
+
+    margin-top:70px;
+
+    position:relative;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:22px;
+
+    top:0;
+
+    bottom:0;
+
+    width:2px;
+
+    background:#d8c6a6;
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    gap:35px;
+
+    margin-bottom:70px;
+
+}
+
+.timeline-dot{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:var(--gold);
+
+    border:8px solid white;
+
+    flex-shrink:0;
+
+    box-shadow:var(--shadow);
+
+}
+
+.timeline-content{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    width:100%;
+
+    box-shadow:var(--shadow);
+
+}
+
+.timeline-content h3{
+
+    color:var(--gold);
+
+    margin-bottom:15px;
+
+}
+
+.timeline-content p{
+
+    margin-bottom:8px;
+
+}
+
+/* ================================
+        FAMILY
+================================ */
+
+.family{
+
+    padding:120px 0;
+
+    text-align:center;
+
+}
+
+.family-grid{
+
+    display:grid;
+
+    /* grid-template-columns:repeat(2,1fr); */
+
+    gap:40px;
+
+    margin-top:60px;
+
+}
+
+.family-card{
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.family-card h3{
+
+    margin-bottom:25px;
+
+    color:var(--gold);
+
+}
+
+.family-card p{
+
+    margin-bottom:12px;
+
+}
+
+.family-card ul{
+
+    list-style:none;
+
+    columns:2;
+
+    margin-top:20px;
+
+}
+
+.family-card li{
+
+    margin-bottom:12px;
+
+}
+
+/* Hover */
+
+.family-card:hover,
+
+.timeline-content:hover{
+
+    transform:translateY(-8px);
+
+    transition:.35s;
+
+}
+
+/* =====================================
+            BIBLE VERSE
+=====================================*/
+
+.verse{
+
+    padding:140px 0;
+
+    text-align:center;
+
+    background:linear-gradient(#faf8f3,#ffffff);
+
+}
+
+.verse-text{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:44px;
+
+    line-height:1.6;
+
+    font-style:italic;
+
+    color:var(--heading);
+
+    margin:40px 0;
+
+}
+
+.verse-reference{
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+/* =====================================
+            GALLERY
+=====================================*/
+
+.gallery{
+
+    padding:120px 0;
+
+    background:white;
+
+    text-align:center;
+
+}
+
+.gallery-intro{
+
+    max-width:700px;
+
+    margin:25px auto 60px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+    grid-auto-rows:220px;
+
+}
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.45s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.gallery-item.tall{
+
+    grid-row:span 2;
+
+}
+
+.gallery-item.wide{
+
+    grid-column:span 2;
+
+}
+
+/* =====================================
+            LOCATION
+=====================================*/
+
+.location{
+
+    padding:120px 0;
+
+    background:#f7f4ee;
+
+    text-align:center;
+
+}
+
+.location-text{
+
+    margin:25px auto 50px;
+
+    max-width:650px;
+
+}
+
+.map-card{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.map-card iframe{
+
+    width:100%;
+
+    height:500px;
+
+    border:0;
+
+}
+
+/* =====================================
+           DRESS CODE
+=====================================*/
+
+.dress{
+
+    padding:120px 0;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+.palette{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:60px;
+
+    margin-top:50px;
+
+    flex-wrap:wrap;
+
+}
+
+.swatch{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+
+    font-weight:500;
+
+}
+
+.color{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    border:3px solid rgba(0,0,0,.08);
+
+    box-shadow:var(--shadow);
+
+}
+
+.color.white{
+
+    background:#ffffff;
+
+}
+
+.color.beige{
+
+    background:#e7d8c4;
+
+}
+
+.color.black {
+    background: black;
+}
+
+.color.pink {
+    background: pink;
+}
+
+.color.sage{
+
+    background:#bcc8b3;
+
+}
+
+/* ============================
+        GIFT
+============================ */
+
+.gift{
+
+    padding:120px 0;
+
+    background:#f8f5ef;
+
+}
+
+.gift-card{
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:70px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.gift-card p{
+
+    margin-top:25px;
+
+    line-height:2;
+
+}
+
+/* ============================
+        RSVP
+============================ */
+
+.rsvp{
+
+    padding:120px 0;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+.contact-card{
+
+    max-width:450px;
+
+    margin:50px auto 0;
+
+    background:#faf8f3;
+
+    padding:45px;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.contact-card h3{
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+}
+
+.contact-card p{
+
+    margin:15px 0;
+
+}
+
+/* ============================
+      CLOSING HERO
+============================ */
+
+.closing{
+
+    position:relative;
+
+    height:70vh;
+
+}
+
+.closing img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.closing-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.closing-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.closing-content h2{
+
+    color:white;
+
+    font-size:64px;
+
+    margin-bottom:20px;
+
+}
+
+.closing-content p{
+
+    color:white;
+
+    font-size:20px;
+
+}
+
+/* ============================
+        FOOTER
+============================ */
+
+footer{
+
+    background:#332c26;
+
+    padding:35px;
+
+    text-align:center;
+
+}
+
+footer p{
+
+    color:#ddd;
+
+    letter-spacing:2px;
+
+}
+
+/* ============================
+     RESPONSIVE
+============================ */
+
+@media(max-width:992px){
+
+    .family-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    nav ul{
+
+        display:none;
+
+    }
+
+    .hero h1{
+
+        font-size:56px;
+
+    }
+
+    .hero h2{
+
+        font-size:42px;
+
+    }
+
+    .story h2,
+    .baby h2,
+    .details h2,
+    .gallery h2,
+    .location h2,
+    .dress h2,
+    .gift h2,
+    .rsvp h2{
+
+        font-size:38px;
+
+    }
+
+    .portrait-wrapper{
+
+        width:260px;
+
+        height:260px;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-item.tall,
+    .gallery-item.wide{
+
+        grid-column:auto;
+
+        grid-row:auto;
+
+    }
+
+    .gallery-grid{
+
+        grid-auto-rows:260px;
+
+    }
+
+    .palette{
+
+        gap:30px;
+
+    }
+
+    .gift-card{
+
+        padding:40px 30px;
+
+    }
+
+    .closing-content h2{
+
+        font-size:44px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .hero h1{
+
+        font-size:44px;
+
+    }
+
+    .hero h2{
+
+        font-size:34px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+}
+
+.rsvp-button{
+    display: inline-block;
+    padding: 16px 35px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-size: 9px;
+    letter-spacing: 0.3em;
+    transition: 0.3s ease;
+}
+
+.rsvp-button:hover {
+  color: var(--bg);
+  background: var(--gold);
+}
+
+a{
+        text-decoration: none;
+}
